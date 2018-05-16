@@ -14,6 +14,7 @@
 		1744208B20AC456E00BF12C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1744208920AC456E00BF12C1 /* LaunchScreen.storyboard */; };
 		1744209320AC488600BF12C1 /* TableauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744209220AC488600BF12C1 /* TableauController.swift */; };
 		17C407EC20ACC3B900BE39D1 /* Chanson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C407EB20ACC3B900BE39D1 /* Chanson.swift */; };
+		17C407EE20ACD11900BE39D1 /* ChansonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C407ED20ACD11800BE39D1 /* ChansonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1744208C20AC456E00BF12C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1744209220AC488600BF12C1 /* TableauController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableauController.swift; sourceTree = "<group>"; };
 		17C407EB20ACC3B900BE39D1 /* Chanson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chanson.swift; sourceTree = "<group>"; };
+		17C407ED20ACD11800BE39D1 /* ChansonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChansonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1744208C20AC456E00BF12C1 /* Info.plist */,
 				1744209220AC488600BF12C1 /* TableauController.swift */,
 				17C407EB20ACC3B900BE39D1 /* Chanson.swift */,
+				17C407ED20ACD11800BE39D1 /* ChansonCell.swift */,
 			);
 			path = "Lecteur-Youtube";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				1744208320AC456C00BF12C1 /* ViewController.swift in Sources */,
 				1744208120AC456C00BF12C1 /* AppDelegate.swift in Sources */,
 				17C407EC20ACC3B900BE39D1 /* Chanson.swift in Sources */,
+				17C407EE20ACD11900BE39D1 /* ChansonCell.swift in Sources */,
 				1744209320AC488600BF12C1 /* TableauController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
