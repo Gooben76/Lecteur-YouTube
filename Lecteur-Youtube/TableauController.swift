@@ -19,6 +19,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
         super.viewDidLoad()
         tableauControlleur.delegate = self
         tableauControlleur.dataSource = self
+        title = "Mes vidéos préférées"
         chargeChansons()
     }
     
@@ -36,7 +37,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170
+        return 130
     }
 
     func chargeChansons(){

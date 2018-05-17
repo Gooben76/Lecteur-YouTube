@@ -28,6 +28,27 @@ class ChansonCell: UITableViewCell {
 
     func creerCell(_ chanson:Chanson){
         self.chanson = chanson
-        titreEtArtisteLabel.text = chanson.titre
+        telechargerImage()
+        
+        let attributed = NSMutableAttributedString(string: self.chanson.titre, attributes: [.font:UIFont.boldSystemFont(ofSize: 20), .foregroundColor:UIColor.black])
+        let suite = NSAttributedString(string: "\n"+self.chanson.artiste, attributes: [.font:UIFont.italicSystemFont(ofSize: 20), .foregroundColor:UIColor.darkGray])
+        attributed.append(suite)
+        titreEtArtisteLabel.attributedText = attributed
+    }
+    
+    func telechargerImage(){
+        miniatureImage.image = #imageLiteral(resourceName: "logo")
+        
+        if let url = URL(string: chanson.urlMiniature) {
+            let session = URLSession.shared
+            let task = session.dataTask(with: url, completionHandler: {(data, response, error) in
+                if let imageData = data, let image = UIImage(data: imageData) {
+                    DispatchQueue.main.async {
+                        self.miniatureImage.image = image
+                    }
+                }
+            })
+            task.resume()
+        }
     }
 }
