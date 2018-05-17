@@ -72,11 +72,20 @@
                     <navigationItem key="navigationItem" id="u3a-ro-ssv"/>
                     <connections>
                         <outlet property="tableauControlleur" destination="JH3-jZ-t3Q" id="udd-NC-Z05"/>
+                        <segue destination="Sh0-bb-of6" kind="show" identifier="VersVideo" id="Tu2-U4-X5C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+            <point key="canvasLocation" x="852" y="791"/>
+        </scene>
+        <!--Video Controller-->
+        <scene sceneID="Ue0-B0-fXu">
+            <objects>
+                <viewController id="Sh0-bb-of6" customClass="VideoController" customModule="Lecteur_Youtube" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPS-Qe-9B7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="791"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iGN-pu-aLE">
